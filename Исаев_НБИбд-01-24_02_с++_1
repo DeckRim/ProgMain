@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+bool canFormTriangle(double a, double b, double c) {
+    
+    return (a + b > c) && (a + c > b) && (b + c > a);
+}
+
+int main() {
+    double a, b, c;
+    cout << "Введите длины трех отрезков: ";
+    cin >> a >> b >> c;
+
+    if (canFormTriangle(a, b, c)) {
+        cout << "Отрезки могут образовать треугольник." << endl;
+    } else {
+        cout << "Отрезки не могут образовать треугольник." << endl;
+    }
