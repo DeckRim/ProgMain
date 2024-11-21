@@ -1,0 +1,14 @@
+def power(k, n):
+    if n < 0:
+        raise ValueError("Показатель должен быть натуральным.")
+    result = 1
+    for _ in range(n):
+        result *= k
+    return result
+
+k = int(input("Введите число k: "))
+n = int(input("Введите натуральный показатель n: "))
+if n < 1:
+    print("Показатель n должен быть натуральным числом.")
+else:
+    print(f"{k} в степени {n} равно {power(k, n)}")
