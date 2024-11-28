@@ -1,0 +1,18 @@
+n = int(input("Введите кол-во чисел: "))
+
+plus = 0
+minus = 0
+nul = 0
+
+for i in range(n):
+    number = int(input(f"Введите число {i + 1}: "))
+    if number > 0:
+        plus += 1
+    elif number < 0:
+        minus += 1
+    else:
+        nul += 1
+
+print(f"Положительных чисел: {plus}")
+print(f"Отрицательных чисел: {minus}")
+print(f"Нулей: {nul}")
